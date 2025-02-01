@@ -13,14 +13,18 @@ const Card = ({ card }) => {
                 <div className="card-body">
                     <h2 className="text-[#282828] text-xl font-semibold font-['Lexend']">{recipe_name}</h2>
                     <p className="text-[#878787] text-base font-normal font-['Fira Sans'] leading-[30px]">{short_description}</p>
-                    <div className="divider"></div>
+                    <hr className="h-[0px] border border-[#282828]/10" />
                     <h3 className="text-[#282828] text-lg font-medium font-['Lexend']">Ingredients: 6</h3>
-                    <ul className="w-[348px] text-[#878787] text-lg font-normal font-['Fira Sans'] leading-loose">
+                    <div className="w-[348px] text-[#878787] text-lg font-normal font-['Fira Sans'] leading-loose">
                         {
-                            ingredients.map((ingred, index) => <li key={index}>{ingred}</li>)
+                            ingredients.map((ingred, index) =>
+                                <ul className="list-disc list-inside">
+                                    <li key={index}>{ingred}</li>
+                                </ul>
+                                )
                         }
-                    </ul>
-                    <div className="divider"></div>
+                    </div>
+                    <hr className="h-[0px] border border-[#282828]/10" />
                     <div className="flex gap-4">
                         <div className="flex">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
