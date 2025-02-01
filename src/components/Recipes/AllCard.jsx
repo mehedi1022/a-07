@@ -1,5 +1,6 @@
 import { React, useEffect, useState } from 'react';
 import Card from "./Card"
+import cafe from "../../../public/cafe.json"
 
 const AllCard = () => {
 
