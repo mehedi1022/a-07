@@ -4,6 +4,7 @@ import Banner from "./components/Banner/Banner"
 import Title from './components/Recipes/Title';
 import AllCard from "./components/Recipes/Allcard";
 import SideBar from "./components/Recipes/SideBar";
+import Table from "./components/Recipes/Table";
 
 
 
@@ -23,7 +24,8 @@ function App() {
       <AllCard/>
       </div>
       <div className="col-span-4">
-      <SideBar/>
+      {/* <SideBar/> */}
+      <Table/>
       </div>
     
     

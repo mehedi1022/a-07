@@ -4,7 +4,7 @@ const Card = ({ card }) => {
     const { recipe_name, recipe_id, recipe_image, short_description, ingredients, preparing_time, calories } = card
     return (
         <div>
-            <div className="card bg-base-100 w-96 shadow-xl">
+            <div className="card bg-base-100 w-96 rounded-2xl border border-[#282828]/20">
                 <div className="flex justify-center pt-8">
                     <img className="w-80 h-[200px] object-cover rounded-2xl"
                         src={recipe_image}
