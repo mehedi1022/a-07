@@ -9,30 +9,22 @@ import Table from "./components/Recipes/Table";
 
 
 function App() {
-  const [count, setCount] = useState(0)
+
 
   return (
     <>
 
-    <div className="container mx-auto px-[108px]">
+      <div className="container mx-auto px-[108px]">
 
-    <Header/>
-    <Banner/>
-    <Title/>
-    <div className="grid grid-cols-12">
-      <div className="col-span-8">
-      <AllCard/>
+        <Header />
+        <Banner />
+        <Title />
+
+        <AllCard />
+
+
       </div>
-      <div className="col-span-4">
-      {/* <SideBar/> */}
-      <Table/>
-      </div>
-    
-    
-    </div>
-    
-    </div>
-      
+
     </>
   )
 }

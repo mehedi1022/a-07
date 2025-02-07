@@ -1,6 +1,7 @@
 import React from 'react';
 
-const Card = ({ card }) => {
+const Card = ({ card, handleCart }) => {
+    // console.log(handleCart);
     const { recipe_name, recipe_id, recipe_image, short_description, ingredients, preparing_time, calories } = card
     return (
         <div>
@@ -18,8 +19,8 @@ const Card = ({ card }) => {
                     <div className="w-[348px] text-[#878787] text-lg font-normal font-['Fira Sans'] leading-loose">
                         {
                             ingredients.map((ingred, index) =>
-                                <ul className="list-disc list-inside">
-                                    <li key={index}>{ingred}</li>
+                                <ul className="list-disc list-inside" key={index}>
+                                    <li>{ingred}</li>
                                 </ul>
                                 )
                         }
@@ -41,7 +42,7 @@ const Card = ({ card }) => {
                         </div>
                     </div>
                     <div className="card-actions">
-                        <button className="h-[49px] px-6 py-[13px] bg-[#0be58a] rounded-[50px] justify-center items-center gap-2.5 inline-flex text-[#150b2b] text-lg font-medium font-['Lexend']">Want to Cook</button>
+                        <button className="h-[49px] px-6 py-[13px] bg-[#0be58a] rounded-[50px] justify-center items-center gap-2.5 inline-flex text-[#150b2b] text-lg font-medium font-['Lexend']" onClick={(e) => handleCart(card)}>Want to Cook</button>
                     </div>
                 </div>
             </div>
