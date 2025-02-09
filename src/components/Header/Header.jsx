@@ -44,7 +44,7 @@ const Header = () => {
                 <div className="navbar-end">
                     <div className="bg-[#150b2b]/5 hidden lg:flex items-center justify-center px-6 py-3 rounded-full mr-4">
                     <CiSearch className="w-6 h-6 relative overflow-hidden"/>
-                <input className="ml-2 text-[#150b2b]/70 text-base font-normal font-['Lexend']" type="text" placeholder="Search" />
+                <input className="input w-[160px] h-6 ml-2 bg-[#150b2b]/5 text-base font-normal font-['Lexend']" type="text" placeholder="Search" />
                 
                     </div>
                     <img src={userIcon} alt="" />

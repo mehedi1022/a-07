@@ -2,7 +2,6 @@ import { React, useEffect, useState } from 'react';
 import { useReactTable, getCoreRowModel, flexRender } from '@tanstack/react-table'
 
 import Card from "./Card"
-import cafe from "../../../public/cafe.json"
 
 const AllCard = () => {
     // useState 
