@@ -68,7 +68,7 @@ const AllCard = () => {
 
 
     return (
-        <div className="grid grid-cols-12 mb-6">
+        <div className="grid grid-cols-12 mb-8">
             {/* this is cards */}
             <div className="col-span-8">
                 <div className="grid grid-cols-2 gap-4">
