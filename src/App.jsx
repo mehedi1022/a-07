@@ -3,8 +3,7 @@ import Header from "./components/Header/header"
 import Banner from "./components/Banner/Banner"
 import Title from './components/Recipes/Title';
 import AllCard from "./components/Recipes/Allcard";
-import SideBar from "./components/Recipes/SideBar";
-import Table from "./components/Recipes/Table";
+
 
 
 

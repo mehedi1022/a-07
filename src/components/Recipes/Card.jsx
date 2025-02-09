@@ -42,7 +42,7 @@ const Card = ({ card, handleCart }) => {
                         </div>
                     </div>
                     <div className="card-actions">
-                        <button className="h-[49px] px-6 py-[13px] bg-[#0be58a] rounded-[50px] justify-center items-center gap-2.5 inline-flex text-[#150b2b] text-lg font-medium font-['Lexend']" onClick={(e) => handleCart(card)}>Want to Cook</button>
+                        <button className="h-[49px] px-6 py-[13px] bg-[#0be58a] rounded-[50px] justify-center items-center gap-2.5 inline-flex text-[#150b2b] text-lg font-medium font-['Lexend']" onClick={(e) => {handleCart(card)}}>Want to Cook</button>
                     </div>
                 </div>
             </div>
