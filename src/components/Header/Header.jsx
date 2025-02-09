@@ -4,7 +4,7 @@ import userIcon from "../../assets/user-icon.png"
 
 const Header = () => {
     return (
-        <header className="">
+        <header className="mt-6">
             <div className="navbar bg-base-100">
                 <div className="navbar-start">
                     <div className="dropdown">

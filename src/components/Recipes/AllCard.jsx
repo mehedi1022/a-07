@@ -84,7 +84,7 @@ const AllCard = () => {
                 <div className="h-auto rounded-2xl border border-[#282828]/20 p-6">
                     <div className="">
                         <h1 className="text-center text-[#282828] text-2xl font-semibold font-['Lexend']">Want to cook: {data.length}</h1>
-                        <hr className="mx-[50px] h-[0px] border border-[#282828]/20" />
+                        <hr className="mx-[50px] h-[0px] border border-[#282828]/20 my-6" />
                         <table className="text-left items-center">
                             <thead className="text-[#878787] text-base font-medium font-['Fira Sans']">
                                 {table.getHeaderGroups().map(headerGroup => (
@@ -121,9 +121,9 @@ const AllCard = () => {
                     </div>
                     {/* cooking  */}
                     <div>
-                        <div className="">
+                        <div className="mt-6">
                             <h1 className="text-center text-[#282828] text-2xl font-semibold font-['Lexend']">Currently cooking: {cook.length}</h1>
-                            <hr className="mx-[50px] h-[0px] border border-[#282828]/20" />
+                            <hr className="mx-[50px] h-[0px] border border-[#282828]/20 my-6" />
                             <table className="text-left items-center">
                                 <thead className="text-[#878787] text-base font-medium font-['Fira Sans']">
                                     {cookTable.getHeaderGroups().map(headerGroup => (
