@@ -100,7 +100,7 @@ const AllCard = () => {
                             <tbody className="text-[#282828]/70 text-base font-normal font-['Fira Sans'] leading-relaxed px-6 py-4 bg-[#282828]/5">
                                 {table.getRowModel().rows.map((row) => (
                                     <tr key={row.id}>
-                                        {/* <td>{index + 1}</td> */}
+                                        
                                         {row.getVisibleCells().map(cell => (
                                             <td key={cell.id} className="w-[120px] pb-5 pr-5">
                                                 {flexRender(cell.column.columnDef.cell, cell.getContext())}
@@ -139,7 +139,7 @@ const AllCard = () => {
                                 <tbody className="text-[#282828]/70 text-base font-normal font-['Fira Sans'] leading-relaxed px-6 py-4 bg-[#282828]/5">
                                     {cookTable.getRowModel().rows.map((row) => (
                                         <tr key={row.id}>
-                                            {/* <td>{index + 1}</td> */}
+                                           
                                             {row.getVisibleCells().map(cell => (
                                                 <td key={cell.id} className="w-[120px] pb-5 pr-5">
                                                     {flexRender(cell.column.columnDef.cell, cell.getContext())}
