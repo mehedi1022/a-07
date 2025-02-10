@@ -1,5 +1,6 @@
 import { React, useEffect, useState } from 'react';
 import { useReactTable, getCoreRowModel, flexRender } from '@tanstack/react-table'
+import { toast, ToastContainer } from "react-toastify";
 
 import Card from "./Card"
 
@@ -31,7 +32,7 @@ const AllCard = () => {
             setData([...data, p]);
         }
         else {
-            alert("already exist")
+            toast.warn("already exist")
         }
 
     }
@@ -160,7 +161,7 @@ const AllCard = () => {
                 </div>
             </div>
 
-
+<ToastContainer />
         </div>
 
 
